@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Padelthon Club Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -52,110 +52,213 @@
       class="absolute inset-0 pointer-events-none z-0 max-w-7xl mx-auto border-x border-gray-200 hidden md:block bg-[image:linear-gradient(to_right,#e5e5e5_1px,transparent_1px)] bg-[length:50%_100%] lg:bg-[length:25%_100%] bg-center"
     ></div>
 
-    <nav class="fixed top-0 left-0 right-0 z-50 w-full py-4 px-4 md:px-8 bg-[#F3F2EC]/90 backdrop-blur-md border-b border-black/5 transition-all duration-300 animate-slide-down">
-        
-        <div class="max-w-7xl mx-auto flex items-center justify-between relative">
-            
-            <div class="flex items-center gap-2 cursor-pointer z-20 group transition-transform duration-300 hover:scale-105">
-                <svg class="w-6 h-6 text-[#3E4C24] transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
-                </svg>
-                <span class="text-xl font-bold tracking-tight text-[#1A1A1A]">
-                    Padelthon<span class="font-normal">Club</span>
-                </span>
-            </div>
-
-            <div class="hidden lg:flex items-center gap-1 bg-white/80 backdrop-blur-sm px-1.5 py-1.5 rounded-full border border-gray-200 shadow-sm absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all hover:shadow-md">
-                
-                <a href="#" class="bg-blue-900 text-white px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg">
-                    Home
-                </a>
-                
-                <a href="#" class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900">
-                    Services
-                </a>
-                
-                <a href="#" class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900">
-                    Store
-                </a>
-                
-                <a href="#" class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900">
-                    About
-                </a>
-                
-                <div class="relative group">
-                    <button class="flex items-center gap-1 text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900">
-                        Pages
-                        <svg class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-3 md:gap-4 ml-auto lg:ml-0 z-20">
-                
-                <button class="relative p-2.5 rounded-full border border-gray-300 bg-white transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:border-gray-400 group">
-                    <svg class="w-5 h-5 text-gray-800 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                    </svg>
-                    <span class="absolute -top-1 -right-1 bg-[#1A1A1A] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full border-2 border-[#F3F2EC] transition-transform duration-300 group-hover:scale-110">3</span>
-                </button>
-
-                <a href="#" class="hidden md:flex items-center gap-2 bg-[#CDEF45] px-5 py-2.5 rounded-full font-bold text-sm text-[#1A1A1A] transition-all duration-300 hover:bg-[#bfe335] shadow-sm hover:shadow-lg hover:-translate-y-0.5 border border-black/5 group">
-                    Buy Template
-                    <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                    </svg>
-                </a>
-
-                <button class="lg:hidden text-gray-800 p-1 transition-transform active:scale-90">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-full py-4 px-4 md:px-8 bg-[#F3F2EC]/90 backdrop-blur-md border-b border-black/5 transition-all duration-300 animate-slide-down"
+    >
+      <div class="max-w-7xl mx-auto flex items-center justify-between relative">
+        <div
+          class="flex items-center gap-2 cursor-pointer z-20 group transition-transform duration-300 hover:scale-105"
+        >
+          <svg
+            class="w-6 h-6 text-[#3E4C24] transition-transform duration-300 group-hover:rotate-12"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"
+            />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-[#1A1A1A]">
+            Padelthon<span class="font-normal">Club</span>
+          </span>
         </div>
+
+        <div
+          class="hidden lg:flex items-center gap-1 bg-white/80 backdrop-blur-sm px-1.5 py-1.5 rounded-full border border-gray-200 shadow-sm absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all hover:shadow-md"
+        >
+          <a
+            href="#"
+            class="bg-blue-900 text-white px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            Home
+          </a>
+
+          <a
+            href="#"
+            class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900"
+          >
+            Services
+          </a>
+
+          <a
+            href="#"
+            class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900"
+          >
+            Store
+          </a>
+
+          <a
+            href="#"
+            class="text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900"
+          >
+            About
+          </a>
+
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 text-gray-700 px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5 hover:text-blue-900"
+            >
+              Pages
+              <svg
+                class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 md:gap-4 ml-auto lg:ml-0 z-20">
+          <button
+            class="relative p-2.5 rounded-full border border-gray-300 bg-white transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:border-gray-400 group"
+          >
+            <svg
+              class="w-5 h-5 text-gray-800 transition-transform duration-300 group-hover:rotate-12"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              ></path>
+            </svg>
+            <span
+              class="absolute -top-1 -right-1 bg-[#1A1A1A] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full border-2 border-[#F3F2EC] transition-transform duration-300 group-hover:scale-110"
+              >3</span
+            >
+          </button>
+
+          <a
+            href="#"
+            class="hidden md:flex items-center gap-2 bg-[#CDEF45] px-5 py-2.5 rounded-full font-bold text-sm text-[#1A1A1A] transition-all duration-300 hover:bg-[#bfe335] shadow-sm hover:shadow-lg hover:-translate-y-0.5 border border-black/5 group"
+          >
+            Buy Template
+            <svg
+              class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </a>
+
+          <button
+            class="lg:hidden text-gray-800 p-1 transition-transform active:scale-90"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
 
     <main
       class="relative z-10 flex-grow md:mt-14 flex flex-col items-center justify-start md:justify-center px-4 pt-24 md:pt-0 pb-16"
     >
-<div class="text-center max-w-5xl mx-auto md:my-20">
-    
-    <h2 class="font-script text-4xl md:text-6xl text-brand-dark mb-4 transform -rotate-2 relative inline-block font-bold animate-fade-up">
-        Padelthon Club
-    </h2>
+      <div class="text-center max-w-5xl mx-auto md:my-20">
+        <h2
+          class="font-script text-4xl md:text-6xl text-brand-dark mb-4 transform -rotate-2 relative inline-block font-bold animate-fade-up"
+        >
+          Padelthon Club
+        </h2>
 
-    <h1 class="text-4xl md:text-7xl font-bold leading-[0.95] tracking-tight text-brand-dark mb-8 animate-fade-up delay-200">
-        Where Padel Meets <br />
-        It's People
-    </h1>
+        <h1
+          class="text-4xl md:text-7xl font-bold leading-[0.95] tracking-tight text-brand-dark mb-8 animate-fade-up delay-200"
+        >
+          Where Padel Meets <br />
+          It's People
+        </h1>
 
-    <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-up delay-300">
-        Whether you're here to compete, improve, or just have fun, you'll find
-        players who push you, cheer for you, and maybe even share a drink with
-        you after the game.
-    </p>
+        <p
+          class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-up delay-300"
+        >
+          Whether you're here to compete, improve, or just have fun, you'll find
+          players who push you, cheer for you, and maybe even share a drink with
+          you after the game.
+        </p>
 
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-500">
-        <a href="#" class="flex items-center gap-2 bg-[#CDEF45] px-8 py-4 rounded-full font-bold text-brand-dark hover:brightness-95 transition w-full sm:w-auto justify-center group shadow-sm hover:-translate-y-1 duration-300">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-500"
+        >
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-[#CDEF45] px-8 py-4 rounded-full font-bold text-brand-dark hover:brightness-95 transition w-full sm:w-auto justify-center group shadow-sm hover:-translate-y-1 duration-300"
+          >
             Get Started
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            <svg
+              class="w-5 h-5 transition-transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
             </svg>
-        </a>
+          </a>
 
-        <a href="#" class="flex items-center gap-2 bg-transparent border border-gray-300 px-8 py-4 rounded-full font-bold text-brand-dark hover:bg-white/50 transition w-full sm:w-auto justify-center group hover:-translate-y-1 duration-300">
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-transparent border border-gray-300 px-8 py-4 rounded-full font-bold text-brand-dark hover:bg-white/50 transition w-full sm:w-auto justify-center group hover:-translate-y-1 duration-300"
+          >
             Ask us Anything
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            <svg
+              class="w-5 h-5 transition-transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
             </svg>
-        </a>
-    </div>
-
-</div>
+          </a>
+        </div>
+      </div>
 
       <!-- section 2 -->
       <section class="w-full overflow-hidden py-10 mt-12 relative z-20">
@@ -2074,5 +2177,6 @@
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
