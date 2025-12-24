@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="animation.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="m-0 p-0 font-sans text-white">
+  <body class="m-0 p-0 font-sans text-white bg-black">
     <!--  -->
     <div
-      class="fixed top-0 inset-x-0 z-50 shadow-2xl bg-slate-100/50 px-4 py-5 md:px-24 lg:px-8"
+      class="fixed top-0 inset-x-0 z-50 shadow-2xl bg-slate-100/50 px-4 py-3 md:px-24"
     >
       <div class="relative flex items-center justify-between">
         <!-- Logo -->
@@ -101,11 +101,11 @@
             <!-- From Uiverse.io by nathAd17 -->
             <button
               type="submit"
-              class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-black-100/50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+              class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-black-100/50 backdrop-blur-md lg:font-semibold isolation-auto border-[#CDEF45] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#CDEF45] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 overflow-hidden border-2 rounded-full group"
             >
               Sign Up
               <svg
-                class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-[#CDEF45] ease-linear duration-300 rounded-full border border-[#CDEF45] group-hover:border-none p-2 rotate-45"
                 viewBox="0 0 16 19"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -161,16 +161,218 @@
     </section>
 
     <!--  -->
-    <section class="text-center text-black my-10">
-      <h2 class="text-5xl font-bold">Lorem ipsum dolor sit.</h2>
-      <p class="leading-tight w-1/3 mx-auto text-center py-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit
-        dignissimos ut est. Obcaecati unde corporis architecto animi cumque
-        dolore nesciunt saepe labore itaque mollitia, porro excepturi, ratione
-        debitis hic.
-      </p>
+    <section class="w-full max-w-7xl mx-auto px-4 py-8">
+      <div
+        class="flex items-center justify-between gap-12 md:gap-24 overflow-x-auto no-scrollbar md:justify-center"
+      >
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+              alt="Burger"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >Burger</span
+          >
+        </div>
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://pngimg.com/uploads/fries/fries_PNG40.png"
+              alt="French Fry"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >French Fry</span
+          >
+        </div>
 
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/135/135627.png"
+              alt="Pasta"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >Pasta</span
+          >
+        </div>
 
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/6518/6518098.png"
+              alt="Sandwich"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >Sandwich</span
+          >
+        </div>
+
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2405/2405479.png"
+              alt="Cold Drinks"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >Cold Drinks</span
+          >
+        </div>
+
+        <div
+          class="group flex flex-col items-center gap-3 min-w-[100px] cursor-pointer"
+        >
+          <div
+            class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1149/1149810.png"
+              alt="Combo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span
+            class="text-white font-menu text-xl tracking-wide group-hover:text-[#F4C430] transition-colors"
+            >Combo</span
+          >
+        </div>
+      </div>
     </section>
+
+    <!--  -->
+    <div class="w-full max-w-7xl mx-auto p-4 my-14">
+      <div class="grid grid-cols-1 md:grid-cols-3 w-full">
+        <div
+          class="relative h-64 bg-[#E62E2D] overflow-hidden p-8 flex items-center group cursor-pointer"
+        >
+          <div
+            class="relative z-10 text-white flex flex-col justify-center h-full"
+          >
+            <h2 class="font-menu text-5xl mb-2">Pasta</h2>
+            <p class="text-sm font-light uppercase tracking-wide">
+              Get a <span class="font-bold">20% Discount</span>
+            </p>
+            <p class="text-sm font-light uppercase tracking-wide mb-3">
+              On <span class="font-bold">FIRST ORDER</span>
+            </p>
+            <span class="font-menu text-4xl">$10.90</span>
+          </div>
+          <img
+            src="https://www.pngall.com/wp-content/uploads/5/Pasta-PNG-Image-HD.png"
+            class="absolute -right-12 top-1/2 -translate-y-1/2 w-[65%] h-auto object-cover drop-shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-6"
+            alt="Pasta"
+          />
+        </div>
+
+        <div
+          class="relative h-64 bg-[#1A1A1A] overflow-hidden p-8 flex items-center group cursor-pointer border-l border-r border-gray-800 md:border-none"
+        >
+          <div
+            class="relative z-10 text-white flex flex-col justify-center h-full"
+          >
+            <h2 class="font-menu text-5xl mb-2">Burger</h2>
+            <p class="text-sm font-light uppercase tracking-wide">
+              Get a <span class="font-bold">20% Discount</span>
+            </p>
+            <p class="text-sm font-light uppercase tracking-wide mb-3">
+              On <span class="font-bold">FIRST ORDER</span>
+            </p>
+            <span class="font-menu text-4xl">$12.90</span>
+          </div>
+          <img
+            src="https://www.pngall.com/wp-content/uploads/2016/05/Burger-Free-Download-PNG.png"
+            class="absolute -right-16 top-1/2 -translate-y-1/2 w-[70%] h-auto object-cover drop-shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-6"
+            alt="Burger"
+          />
+        </div>
+
+        <div
+          class="relative h-64 bg-[#F4C430] overflow-hidden p-8 flex items-center group cursor-pointer"
+        >
+          <div
+            class="relative z-10 text-white flex flex-col justify-center h-full"
+          >
+            <h2 class="font-menu text-5xl mb-2">Combo</h2>
+            <p class="text-sm font-light uppercase tracking-wide">
+              Get a <span class="font-bold">20% Discount</span>
+            </p>
+            <p class="text-sm font-light uppercase tracking-wide mb-3">
+              On <span class="font-bold">FIRST ORDER</span>
+            </p>
+            <span class="font-menu text-4xl">$19.90</span>
+          </div>
+          <img
+            src="https://pngimg.com/d/cocacola_PNG5.png"
+            class="absolute right-20 top-1/2 -translate-y-1/2 w-[25%] h-auto object-cover drop-shadow-xl z-0"
+            alt="Coke"
+          />
+          <img
+            src="https://www.pngkey.com/png/full/17-173676_burger-png-burger.png"
+            class="absolute -right-10 top-1/2 -translate-y-1/2 w-[55%] h-auto object-cover drop-shadow-2xl z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-6"
+            alt="Combo Burger"
+          />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+
+    <div class="w-full h-60">
+      <div class="boox w-28 h-28 bg-rose-800"></div>
+    </div>
+    <div class="w-full h-60">
+      <div class="boox1 w-28 h-28 bg-blue-800 rounded-full"></div>
+      
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./padel.js"></script>
   </body>
 </html>
