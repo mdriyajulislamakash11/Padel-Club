@@ -40,16 +40,44 @@ gsap.from(".left-animate", {
 });
 
 // Custom Cursor
-const cursor = document.querySelector("#cursor");
-const main = document.querySelector("#main");
+// const cursor = document.querySelector("#cursor");
+// const main = document.querySelector("#main");
 
-main.addEventListener("mousemove", (e) => {
-  gsap.to(cursor, {
-    x: e.clientX - cursor.offsetWidth / 2,
-    y: e.clientY - cursor.offsetHeight / 2,
-    duration: 0.3,
-    ease: "Power3.easeOut",
-    
-  });
+// main.addEventListener("mousemove", (e) => {
+//   gsap.to(cursor, {
+//     x: e.clientX - cursor.offsetWidth / 2,
+//     y: e.clientY - cursor.offsetHeight / 2,
+//     duration: 0.3,
+//     ease: "Power3.easeOut",
+
+//   });
+// });
+
+gsap.from(".about", {
+  x: 800,
+  duration: 1,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".about",
+    scroller: "body",
+  },
 });
-
+gsap.from(".ab-imag", {
+  x: -800,
+  duration: 1,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".about",
+    scroller: "body",
+  },
+});
+gsap.from(".delevary", {
+  x: -1000,
+  duration: 2,
+  delay: 1,
+  
+  scrollTrigger: {
+    trigger: ".delevary",
+    scroller: "body",
+  },
+});

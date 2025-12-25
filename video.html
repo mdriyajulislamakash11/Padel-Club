@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Background (Tailwind Only)</title>
     <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="./shop.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              chewy: ["Chewy", "cursive"],
+              roboto: ["Roboto", "sans-serif"],
+            },
+            colors: {
+              "brand-red": "#FF0000",
+              "brand-yellow": "#FBBF24",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="m-0 p-0 font-sans text-white bg-black">
     <!-- cursor-pointer -->
@@ -348,18 +365,179 @@
         </div>
       </div>
     </div>
-    <!--  -->
-
-    <!--  -->
-
     <!-- cursor -->
-    <div id="main" class="relative w-full h-screen ">
+    <!-- <div id="main" class="relative w-full h-screen ">
       <div
         id="cursor"
         class="w-14 h-14 bg-white rounded-full  "
       ></div>
-    </div>
+    </div> -->
+<!-- about  -->
+    <section
+      class="relative w-full py-20 px-6 md:px-16 bg-[#111] text-white overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="ab-imag relative z-10">
+          <div
+            class="absolute inset-0 bg-gray-800/30 blur-3xl rounded-full transform scale-75 -z-10"
+          ></div>
 
+          <img
+            src="https://i.ibb.co/tTB3njN6/about-image.png"
+            alt="Tasty Food Combo"
+            class="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <div class="about flex flex-col justify-center space-y-6 font-roboto">
+          <h2 class="text-5xl md:text-6xl font-chewy tracking-wide">
+            About Tasty <span class="text-brand-red">Foods</span>
+          </h2>
+
+          <p class="text-gray-400 text-lg leading-relaxed">
+            Egestas amet facilisis cras suspendisse orci volutpat. Enim ut et
+            amet vitae facilisi vel odio nisl. Pellentesque malesuada massa
+            proin cursus elit amet iaculis.
+          </p>
+
+          <p class="text-gray-400 text-lg leading-relaxed">
+            Enim ut et amet vitae facilisi vel odio nisl. Pellentesque malesuada
+            massa proin cursus elit amet iaculis.
+          </p>
+
+          <ul class="space-y-4 mt-2">
+            <li class="flex items-center gap-3">
+              <div
+                class="flex items-center justify-center w-6 h-6 bg-brand-red rounded-full shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-white font-bold"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-xl font-bold text-white"
+                >Delicious & Healthy Foods</span
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <div
+                class="flex items-center justify-center w-6 h-6 bg-brand-red rounded-full shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-white font-bold"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-xl font-bold text-white"
+                >Best Price & Offers</span
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <div
+                class="flex items-center justify-center w-6 h-6 bg-brand-red rounded-full shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-white font-bold"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-xl font-bold text-white"
+                >Made By Fresh Ingredients</span
+              >
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-4 pt-6">
+            <button
+              class="bg-brand-yellow text-black font-bold text-lg px-8 py-3 rounded-full hover:bg-yellow-400 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              Order Now
+            </button>
+            <button
+              class="bg-transparent border border-gray-500 text-white font-medium text-lg px-8 py-3 rounded-full hover:bg-gray-800 hover:border-white transition duration-300"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- delevary -->
+<section class="relative w-full py-10 px-6 bg-[#545454] overflow-hidden text-white font-['Roboto']">
+        
+        <div class="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative z-10">
+            
+            <div class="text-center md:text-left order-1">
+                <h2 class="font-['Chewy'] text-4xl md:text-5xl mb-6 leading-tight tracking-wide">
+                    Choose your <br> favourite food
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+                    Egestas amet facilisis cras suspendisse orci volutpat. Enim ut et amet vitae facilisi vel odio nisl. Pellentesque malesuada massa proin cursus elit amet iaculis.
+                </p>
+            </div>
+
+            <div class=" delevary relative flex justify-center order-2 my-10 md:my-0">
+                
+                <img src="https://i.ibb.co/CpGT138G/new-removebg-preview.png" 
+                     alt="Fast Delivery Scooter" 
+                     class="w-3/4 md:w-full max-w-sm object-contain drop-shadow-2xl">
+
+                <div class="absolute -top-6 right-0 md:right-10 bg-white/10 backdrop-blur-sm border border-white/20 p-3 rounded-full animate-bounce">
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-gray-300 uppercase">Express Delivery</span>
+                        <span class="block text-xl font-['Chewy'] text-[#FFC107]">30 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right order-3 md:order-last">
+                 <h2 class="font-['Chewy'] text-4xl md:text-5xl mb-6 leading-tight tracking-wide">
+                    Order Online <br> and Get Fast <br> Delivery
+                 </h2>
+                 <p class="text-gray-400 text-lg leading-relaxed max-w-md mx-auto md:ml-auto">
+                    Egestas amet facilisis cras suspendisse orci volutpat. Enim ut et amet vitae facilisi vel odio nisl.
+                 </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GSAP CDN -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
