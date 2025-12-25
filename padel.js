@@ -71,9 +71,10 @@ gsap.from(".ab-imag", {
     scroller: "body",
   },
 });
+
 gsap.from(".delevary", {
-  x: -1000,
-  duration: 2,
+  x: -1200,
+  duration: 3,
   delay: 1,
   
   scrollTrigger: {
@@ -81,3 +82,67 @@ gsap.from(".delevary", {
     scroller: "body",
   },
 });
+
+gsap.from("#man", {
+  rotate: -45,
+  duration: 2,
+  delay: 1,
+  
+  scrollTrigger: {
+    trigger: "#man",
+    scroller: "body",
+  },
+});
+
+
+
+// popular
+gsap.registerPlugin(ScrollTrigger);
+
+// cards animation
+gsap.utils.toArray(".pop-card").forEach((card, i) => {
+  gsap.from(card, {
+    y: 120,
+    x: i % 2 === 0 ? -80 : 80,
+    opacity: 0,
+    scale: 0.9,
+    duration: 0.9,
+    ease: "power4.out",
+    scrollTrigger: {
+      trigger: card,
+      start: "top 85%",
+      toggleActions: "play none none reverse",
+    },
+  });
+});
+
+
+// freedeback
+gsap.registerPlugin(ScrollTrigger);
+
+// LEFT CARD
+gsap.from(".feed-left", {
+  x: -1200,
+  opacity: 0,
+  duration: 1,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: ".feed-left",
+    start: "top 80%",
+    toggleActions: "play none none reverse",
+  }
+});
+
+// RIGHT CARD
+gsap.from(".feed-right", {
+  x: 1200,
+  opacity: 0,
+  duration: 1,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: ".feed-right",
+    start: "top 80%",
+    toggleActions: "play none none reverse",
+  }
+});
+
