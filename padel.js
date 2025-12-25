@@ -146,3 +146,14 @@ gsap.from(".feed-right", {
   }
 });
 
+// latest foood
+gsap.from(".food-news > div", {
+  x: -200,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".food-news",
+    start: "top 80%",
+  }
+});
